@@ -11,6 +11,8 @@ import { CounterService } from './counter.service';
 })
 
 export class AppComponent {
+  title="first-app"
+
   nummer = Math.floor(Math.random()*100)+1;
   hogerLager = "";
   overigeBeurten = 10;
