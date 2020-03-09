@@ -1,14 +1,17 @@
-<h1 align="center" style="padding-top: 50px;padding-bottom: 50px;">Welkom bij "Raad het getal"!</h1>
-<div align="center" style="background-color: gray;margin: 20px;padding-top: 50px;padding-bottom: 50px;">
-  <form>
-    <input type="number" ng-model="value" id="getal" value="0">
-  </form>
-  <p></p>
-  
-  <button style="margin-bottom: 10px;"(click)=raad()>Raad</button>
-  
-  <p>Je getal moet {{hogerLager}}</p>
-  
-  <p>Je hebt nog {{overigeBeurten}} beurten</p>
-  <div id="tijd"></div>
+<div fxFlex fxLayout="column"fxLayoutGap="10px"style="height:100vh">
+<h1 align="center" style="padding-top: 50px; padding-bottom: 50px;">Welkom bij "Raad het getal"!</h1>
+<div fxLayout="row wrap">
+  <div fxFlex="50" fxFlex.lt-md="100" fxLayout="column">
+    <form>
+      <input type="number" ng-model="value" id="getal" value="0">
+    </form>
+    <p></p>
+    <button style="width: 50px;" (click)=raad()>Raad</button>
   </div>
+  <div  fxFlex="50" fxFlex.lt-md="100" fxLayout="column">
+    <p>Je getal moet {{hogerLager}}</p>
+    <p>Je hebt nog {{overigeBeurten}} beurten</p>
+    <div id="tijd"></div>
+  </div>
+</div>
+</div>
