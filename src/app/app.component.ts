@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { Output, EventEmitter } from '@angular/core';
-
-import {MaterialModule} from './material.module';
 import { CounterService } from './counter.service';
 
 @Component({
